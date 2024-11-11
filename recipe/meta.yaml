@@ -23,6 +23,8 @@ requirements:
     - numpy
     - scipy
     - rdkit
+    - prody
+    - gemmi
 
 test:
   imports:
