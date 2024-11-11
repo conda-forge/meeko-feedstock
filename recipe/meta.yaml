@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,17 +24,15 @@ requirements:
     - scipy
     - rdkit
     - gemmi
+    - prody
 
 test:
   imports:
     - meeko
   commands:
-    - pip check
     - mk_export.py --help
     - mk_prepare_ligand.py --help
     - mk_prepare_receptor.py --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/ccsb-scripps/meeko
