@@ -1,13 +1,13 @@
 {% set name = "meeko" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/meeko-{{ version }}.tar.gz
-  sha256: fbe8908640cd17dabc4c8b0e6958f479907ae532e658ea673f181600a59ea7bc
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meeko-{{ version }}.tar.gz
+  sha256: e3f4ca3a66db17a95d75905fa7a1bfb73971d2f16ec52eb68e5226bafe120b2d
 
 build:
   noarch: python
